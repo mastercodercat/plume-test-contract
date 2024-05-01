@@ -1,0 +1,47 @@
+{
+  "manifestVersion": "3.2",
+  "admin": {
+    "address": "0xD5d049034bC3108e45621872F930Bfda4A4306b5",
+    "txHash": "0xe7da2a93902c795aaad6abfbb0fa7fba102269475b523cd9345ffda056338b88"
+  },
+  "proxies": [
+    {
+      "address": "0xf0cD279090532d9B56AC953488890a7541D09330",
+      "txHash": "0x7dd01d0af5f4dd8dcf8c68f0c4ff258e914dea7c61b20dc1dc9a0b9b1ecd256e",
+      "kind": "transparent"
+    }
+  ],
+  "impls": {
+    "8ea70282bb65e0e505bc4923fa3467566dd1ffa76a25ba6c6902bebb1d2c7b53": {
+      "address": "0x3850e686Fa91CEFb271422AB880FAE681F408451",
+      "txHash": "0xfc6941e0465826a7bece9e4fa53bc8ddab5f6c1a310e67744b7d9f496c2a62d3",
+      "layout": {
+        "solcVersion": "0.8.4",
+        "storage": [
+          {
+            "label": "deployedTokens",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_mapping(t_address,t_array(t_address)dyn_storage)",
+            "contract": "TokenFactory",
+            "src": "contracts\\TokenFactory.sol:8"
+          }
+        ],
+        "types": {
+          "t_address": {
+            "label": "address",
+            "numberOfBytes": "20"
+          },
+          "t_array(t_address)dyn_storage": {
+            "label": "address[]",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_address,t_array(t_address)dyn_storage)": {
+            "label": "mapping(address => address[])",
+            "numberOfBytes": "32"
+          }
+        }
+      }
+    }
+  }
+}
